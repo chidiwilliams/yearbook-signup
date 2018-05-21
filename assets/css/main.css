@@ -263,7 +263,7 @@ nav div.nav-profile div.nav-profile-name, nav.navbar .navbar-brand {
     font-size: 14px;
     color: #835388;
     height: 35px;
-    padding: 7.5px 15px;
+    padding: 7.5px 0;
     font-weight: bold;
     margin-right: 30px;
 }
