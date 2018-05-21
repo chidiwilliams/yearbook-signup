@@ -1,0 +1,492 @@
+@font-face {
+    font-family: "Apercu";
+    font-style: italic;
+    src: url("../fonts/Apercu-Italic.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Apercu";
+    font-weight: 600;
+    src: url("../fonts/Apercu-Medium.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Apercu";
+    font-weight: 600;
+    font-style: italic;
+    src: url("../fonts/Apercu-MediumItalic.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Apercu";
+    font-weight: bold;
+    src: url("../fonts/Apercu-Bold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Apercu";
+    font-weight: bold;
+    font-style: italic;
+    src: url("../fonts/Apercu-BoldItalic.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Apercu";
+    font-weight: lighter;
+    src: url("../fonts/Apercu-Light.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Apercu";
+    font-weight: lighter;
+    font-style: italic;
+    src: url("../fonts/Apercu-LightItalic.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Apercu";
+    src: url("../fonts/Apercu-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Have Heart One";
+    font-weight: normal;
+    src: url("../fonts/Have\ Heart\ One.ttf") format("truetype");
+}
+
+html, body, #app {
+    padding: 0;
+    margin: 0;
+    font-family: "Apercu";
+    line-height: 1.75;
+}
+
+a, a:focus, a:hover {
+    text-decoration: none;
+    color: inherit;
+}
+
+.left-side {
+    background-color: #ffffff;
+}
+
+.right-side {
+    background-color: #333;
+    position: fixed;
+    height: 100%;
+    right: 0;
+    background: linear-gradient(#64396996, #1b071def), url(../img/8c8d8ebd22ce7372706bc4cac244fffc_L.png);
+    background-position: bottom left;
+    background-size: cover;
+}
+
+.right-side-50, .left-side-50 {
+    width: 50%;
+}
+
+.left-side {
+    float: left;
+}
+
+.right-side {
+    position: fixed;
+    height: 100%;
+}
+
+.left-side-75 {
+    width: 100%;
+}
+
+.right-side-25 {
+    width: 0;
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .left-side-75 {
+        width: calc(100% - 300px);
+    }
+    
+    .right-side-25 {
+        width: 300px;
+        display: block;
+    }
+}
+
+@media (min-width: 1024px) {
+    .left-side-75 {
+        width: calc(100% - 400px);
+    }
+
+    .right-side-25 {
+        width: 400px;
+    }
+}
+
+div.form {
+    margin: 150px auto 10px auto;
+    width: 350px;
+}
+
+.page-title-parent {
+    margin-bottom: 20px;
+}
+
+.page-title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #835388;
+    line-height: 40px;
+}
+
+.page-title-sub {
+    font-weight: bold;
+    line-height: 40px;
+    font-style: italic;
+    font-size: 16px;
+}
+
+form .form-group {
+    margin-bottom: 25px;
+}
+
+form label {
+    font-weight: normal;
+}
+
+form input.form-control {
+    padding: 22px 12px;
+}
+
+form input[type=submit] {
+    width: 100%;
+    background-color: #835388;
+    height: 45px;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    margin: 25px 0;
+    font-weight: 600;
+}
+
+form div.forgot-password {
+    text-align: center;
+    font-weight: 600;
+    font-style: italic;
+}
+
+form div.forgot-password a {
+    color: #835388;
+}
+
+div.page-footer {
+    text-align: center;
+    padding: 75px 15px 25px 15px;
+}
+
+div.page-footer .follow-text {
+    color: #835388;
+    font-weight: bold;
+    font-style: italic;
+    margin-right: 20px;
+}
+
+div.page-footer span.social-icons span {
+    margin-right: 15px;
+}
+
+div.page-footer span.social-icons img {
+    max-width: 50px;
+}
+
+div.bang-text {
+    font-family: "Have Heart One";
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    padding-left: 50px;
+    padding-bottom: 20px;
+    display: none;
+}
+
+div.bang-text-sub {
+    font-size: 40px;
+    margin-bottom: -55px;
+}
+
+div.bang-text-main {
+    font-size: 100px;
+}
+
+@media (min-width: 768px) {
+    div.bang-text {
+        display: block;
+    }
+}
+
+@media (min-width: 1024px) {
+    div.bang-text {
+        padding-left: 70px;
+        padding-bottom: 30px;
+    }
+
+    div.bang-text-sub {
+        font-size: 50px;
+        margin-bottom: -70px;
+    }
+
+    div.bang-text-main {
+        font-size: 130px;
+    }
+}
+
+nav.nav {
+    box-shadow: 0 3px 10px #f1f1f1;
+    padding: 15px 40px;
+}
+
+nav div.nav-profile div {
+    margin-right: 30px;
+}
+
+nav div {
+    line-height: 35px;
+}
+
+nav div.nav-sign-out a {
+    color: #888;
+}
+
+nav div.nav-profile div.nav-profile-name {
+    color: #835388;
+    font-weight: bold;
+}
+
+nav div.nav-profile div.nav-profile-preview {
+    color: #fff;
+    background-color: #835388;
+    padding: 0 30px;
+    border-radius: 4px;
+}
+
+div.page {
+    max-width: 560px;
+    margin: 50px auto 0 auto;
+    padding: 0 15px;
+}
+
+@media (min-width: 768px) {
+    div.page {
+        padding: 0 25px;
+    }
+}
+
+@media (min-width: 1440px) {
+    div.page {
+        max-width: 700px;
+    }
+}
+
+div.intro {
+    text-align: center;
+}
+
+div.page div.page-heading {
+    font-family: "Have Heart One";
+    font-size: 60px;
+    margin-bottom: 10px;
+    color: #3B193E;
+    text-align: center;
+}
+
+div.intro div.intro-body {
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+div.intro div.intro-body p {
+    margin-bottom: 20px;
+}
+
+div.intro div.get-started {
+    color: #fff;
+    background-color: #835388;
+    padding: 0 20px;
+    border-radius: 4px;
+    line-height: 40px;
+    font-weight: bold;
+    text-decoration: none;
+    max-width: 300px;
+    margin: auto;
+}
+
+div.page-instructions {
+    font-weight: bold;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+div.bio-timeline {
+    margin-bottom: 40px;
+}
+
+div.bio-time {
+    text-align: center;
+    width:  33%;
+    z-index: 1;
+}
+
+div.bio-time a {
+    display: block;
+    width: 54px;
+    margin: auto;
+}
+
+div.bio-timeline-times {
+    display: flex;
+    position: relative;
+}
+
+div.bio-time-number {
+    width: 54px;
+    margin: auto;
+    line-height: 50px;
+    border: 2px solid #bbb;
+    color: #bbb;
+    background-color: #fff;
+    border-radius: 36px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    box-shadow: 0 0 0 5px #fff;
+}
+
+div.bio-time-label {
+    font-size:  16px;
+    font-weight: 600;
+    color: #bbb;
+    max-width: 100px;
+    margin: auto;
+}
+
+.bio-time-selected .bio-time-number {
+    background: #835388;
+    border-color: #835388;
+    color:  #fff;
+}
+
+.bio-time-selected .bio-time-label {
+    color: #835388;
+}
+
+.timeline-line {
+    height: 3px;
+    background-color: #eee;
+    position: absolute;
+    top: 24px;
+    left: 0;
+    right: 0;
+}
+
+.page .form {
+    max-width: 375px;
+    margin: auto;
+}
+
+.memories .form {
+    width: 100%;
+    max-width: none;
+}
+
+textarea.form-control {
+    padding: 10px 12px;
+}
+
+div.dropzone {
+    text-align: center;
+    margin-bottom: 30px;
+    border: 1px dashed #888888;
+    padding: 30px 20px;
+    border-radius: 4px;
+}
+
+div.dropzone div.dropzone-icon {
+    margin-bottom: 15px;
+}
+
+div.dropzone .dropzone-icon img {
+    width: 70px;
+}
+
+div.dropzone div.dropzone-text {
+    font-size: 18px;
+    color: #888888;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+div.dropzone input[type=submit] {
+    background: #888888;
+    max-width: 200px;
+    margin: 0;
+    font-weight: normal;
+}
+
+div.profile-picture {
+    width: 180px;
+    height: 180px;
+    background-color: #ddd;
+    margin: 0 auto 30px auto;
+    border-radius: 50%;
+}
+
+div.profile-edit {
+    color: #fff;
+    background-color: #835388;
+    padding: 10px 30px;
+    border-radius: 4px;
+    max-width: 130px;
+    text-align: center;
+    margin: 0 auto 50px auto;
+}
+
+div.profile-table {
+    font-weight: 600;
+}
+
+div.profile-table div.row > div {
+    margin-bottom: 5px;
+}
+
+@media(min-width: 768px) {
+    div.profile-table div.row > div {
+        margin-bottom: 15px;
+    }
+}
+
+div.profile-table div.profile-key {
+    color: #888888;
+}
+
+div.profile-table div.profile-value {
+    margin-bottom: 25px;
+}
+
+@media(min-width: 768px) {
+    div.profile-table div.profile-value {
+        margin-bottom: 0;
+    }
+}
+
+.profile-value .memories-pictures {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 0 100%;
+}
+
+.profile-value .memories-pictures .memories-picture {
+    width: 80px;
+    height: 100px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    background: #eee;
+}

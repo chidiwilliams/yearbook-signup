@@ -1,0 +1,76 @@
+{% extends "_in.html" %}
+
+{% block main %}
+<div class="real page">
+    <div class="real-header page-heading">Real Stuff</div>
+
+    <div class="real-body">
+        <div class="bio-timeline">
+            <div class="bio-timeline-times">
+                <div class="bio-time bio-time-selected">
+                    <a href="./bio.html">
+                        <div class="bio-time-number">1</div>
+                    </a>
+                    <div class="bio-time-label">Bio</div>
+                </div>
+                <div class="bio-time bio-time-selected">
+                    <a href="./real.html">
+                        <div class="bio-time-number">2</div>
+                    </a>
+                    <div class="bio-time-label">Real stuff</div>
+                </div>
+                <div class="bio-time">
+                    <a href="./memories.html">
+                        <div class="bio-time-number">3</div>
+                    </a>
+                    <div class="bio-time-label">Memories</div>
+                </div>
+
+                <div class="timeline-line" style="background: linear-gradient(to right, #835388 50%, #eee 50%);"></div>
+            </div>
+        </div>
+
+        <div class="page-instructions">Here you'll fill actual yearbook stuff.</div>
+
+        <form action="#" class="form">
+            <div class="form-group">
+                <label for="Password" class="control-label"><b>Who</b> really are you? (340 words)
+                </label>
+                <textarea name="who" id="" cols="30" rows="5" placeholder="I'm a dead guy" class="form-control"></textarea>
+            </div>
+        
+            <div class="form-group">
+                <label for="Password" class="control-label">Your <b>Interests</b>
+                </label>
+                <textarea name="interests" id="" cols="30" rows="5" placeholder="babes only" class="form-control"></textarea>
+            </div>
+            
+                <div class="form-group">
+                    <label for="Password" class="control-label">Your <b>Favourite people in this set</b>
+                    </label>
+                    <textarea name="favourite" id="" cols="30" rows="5" placeholder="other dead guys" class="form-control"></textarea>
+                </div>
+            
+                <div class="form-group">
+                    <label for="Password" class="control-label">Your <b>Role models</b>
+                    </label>
+                    <textarea name="favourite" id="" cols="30" rows="5" placeholder="other dead guys" class="form-control"></textarea>
+                </div>
+            
+                <div class="form-group">
+                    <label for="Password" class="control-label">What would you miss about CU?</b>
+                    </label>
+                    <textarea name="favourite" id="" cols="30" rows="5" placeholder="the abundance of babes" class="form-control"></textarea>
+                </div>
+            
+                <div class="form-group">
+                    <label for="Password" class="control-label">Parting words</b>
+                    </label>
+                    <textarea name="favourite" id="" cols="30" rows="5" placeholder="I love dead guys" class="form-control"></textarea>
+                </div>
+            
+            <input type="submit" value="Save & Move to Next" class="submit-button">
+        </form>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,108 @@
+{% extends "_in.html" %}
+
+{% block main %}
+<div class="bio page">
+    <div class="bio-header page-heading">Bio</div>
+
+    <div class="bio-body">
+        <div class="bio-timeline">
+            <div class="bio-timeline-times">
+                <div class="bio-time bio-time-selected">
+                    <a href="./bio.html">
+                        <div class="bio-time-number">1</div>
+                    </a>
+                    <div class="bio-time-label">Bio</div>
+                </div>
+                <div class="bio-time">
+                    <a href="./real.html">
+                        <div class="bio-time-number">2</div>
+                    </a>
+                    <div class="bio-time-label">Real stuff</div>
+                </div>
+                <div class="bio-time">
+                    <a href="./memories.html">
+                        <div class="bio-time-number">3</div>
+                    </a>
+                    <div class="bio-time-label">Memories</div>
+                </div>
+        
+                <div class="timeline-line" style="background: linear-gradient(to right, #835388 0%, #eee 0%);"></div>
+            </div>
+        </div>
+
+        <div class="page-instructions">Here you'll fill out your basic information and other regular stuff.</div>
+
+        <form action="#" class="form">
+            <div class="form-group">
+                <label for="Password" class="control-label">Your
+                    <b>First Name</b>
+                </label>
+                <input type="text" class="form-control" type="text" placeholder="First Name" autofocus>
+            </div>
+        
+            <div class="form-group">
+                <label for="Password" class="control-label">Your
+                    <b>Last Name</b>
+                </label>
+                <input type="text" class="form-control" type="text" placeholder="Last Name">
+            </div>
+        
+            <div class="form-group">
+                <label for="Password" class="control-label">Your
+                    <b>Nickname</b>
+                </label>
+                <input type="text" class="form-control" type="text" placeholder="Nickname">
+            </div>
+        
+            <div class="form-group">
+                <label for="Password" class="control-label">Your
+                    <b>Birthday</b>
+                </label>
+                <input type="text" class="form-control" placeholder="01 / 01 / 01">
+            </div>
+        
+        
+            <div class="form-group">
+                <label for="Password" class="control-label">Your
+                    <b>Facebook profile link</b>
+                </label>
+                <input class="form-control" type="text" placeholder="https://facebook.com/deadguy">
+            </div>
+        
+        
+            <div class="form-group">
+                <label for="Password" class="control-label">Your
+                    <b>Twitter handle</b>
+                </label>
+                <input type="text" class="form-control" type="text" placeholder="@ChidiWilliams_">
+            </div>
+        
+        
+            <div class="form-group">
+                <label for="Password" class="control-label">Your
+                    <b>Instagram handle</b>
+                </label>
+                <input type="text" class="form-control" type="text" placeholder="@ChidiWilliams_">
+            </div>
+        
+        
+            <div class="form-group">
+                <label for="Password" class="control-label">Your
+                    <b>Snapchat handle</b>
+                </label>
+                <input type="text" class="form-control" type="text" placeholder="@ChidiWilliams_">
+            </div>
+        
+        
+            <div class="form-group">
+                <label for="Password" class="control-label">Your
+                    <b>Phone Number</b>
+                </label>
+                <input type="text" class="form-control" type="text" placeholder="09095801772">
+            </div>
+        
+            <input type="submit" value="Save & Move to Next" class="submit-button">
+        </form>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,32 @@
+{% extends "_template.html" %}
+
+{% block main %}
+<div class="form">
+    <form action="#" class="form">
+        <div class="page-title-parent">
+            <div class="page-title">Sign in to fill in your Yearbook Details</div>
+        </div>
+
+        <div class="form-group">
+            <label for="Password" class="control-label">Your
+                <b>Email Address</b>
+            </label>
+            <input type="text" class="form-control" type="email" placeholder="you@example.com">
+        </div>
+
+        <div class="form-group">
+            <label for="Password" class="control-label">Your
+                <b>Password</b>
+            </label>
+            <input type="text" class="form-control" type="password" name="password">
+        </div>
+
+        <input type="submit" value="Submit" class="submit-button">
+
+        <div class="forgot-password">
+            <a href="#">Forgot your password?</a>
+        </div>
+    </form>
+</div>
+{% endblock %}
+
