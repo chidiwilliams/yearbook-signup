@@ -1,34 +1,12 @@
 {% extends "_in.html" %}
+{% import "partials/timeline.html" as timeline %}
 
 {% block main %}
 <div class="real page">
     <div class="real-header page-heading">Real Stuff</div>
 
     <div class="real-body">
-        <div class="bio-timeline">
-            <div class="bio-timeline-times">
-                <div class="bio-time bio-time-selected">
-                    <a href="./bio.html">
-                        <div class="bio-time-number">1</div>
-                    </a>
-                    <div class="bio-time-label">Bio</div>
-                </div>
-                <div class="bio-time bio-time-selected">
-                    <a href="./real.html">
-                        <div class="bio-time-number">2</div>
-                    </a>
-                    <div class="bio-time-label">Real stuff</div>
-                </div>
-                <div class="bio-time">
-                    <a href="./memories.html">
-                        <div class="bio-time-number">3</div>
-                    </a>
-                    <div class="bio-time-label">Memories</div>
-                </div>
-
-                <div class="timeline-line" style="background: linear-gradient(to right, #835388 50%, #eee 50%);"></div>
-            </div>
-        </div>
+        {{ timeline.timeline(2) }}
 
         <div class="page-instructions">Here you'll fill actual yearbook stuff.</div>
 

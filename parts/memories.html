@@ -1,41 +1,19 @@
 {% extends "_in.html" %}
+{% import "partials/timeline.html" as timeline %}
 
 {% block main %}
 <div class="memories page">
     <div class="memories-header page-heading">Memories</div>
 
     <div class="memories-body">
-        <div class="bio-timeline">
-            <div class="bio-timeline-times">
-                <div class="bio-time bio-time-selected">
-                    <a href="./bio.html">
-                        <div class="bio-time-number">1</div>
-                    </a>
-                    <div class="bio-time-label">Bio</div>
-                </div>
-                <div class="bio-time bio-time-selected">
-                    <a href="./real.html">
-                        <div class="bio-time-number">2</div>
-                    </a>
-                    <div class="bio-time-label">Real stuff</div>
-                </div>
-                <div class="bio-time bio-time-selected">
-                    <a href="./memories.html">
-                        <div class="bio-time-number">3</div>
-                    </a>
-                    <div class="bio-time-label">Memories</div>
-                </div>
-        
-                <div class="timeline-line" style="background: linear-gradient(to right, #835388 100%, #eee 100%);"></div>
-            </div>
-        </div>
+        {{ timeline.timeline(3) }}
 
         <div class="page-instructions">Memories. These are pictures of moments that mattered to you throughout your stay in CU. Maybe pictures of you and your guys ... sha something along that line.</div>
 
         <form action="#" class="form">
             <div class="dropzone">
                 <div class="dropzone-icon">
-                    <img src="../assets/img/008-twitter.svg" alt="Twitter">
+                    <img src="../assets/img/upload.svg" alt="Twitter">
                 </div>
                 <div class="dropzone-text">Drag pictures here or click the button to upload pictures.</div>
                 <div class="dropzone-action">

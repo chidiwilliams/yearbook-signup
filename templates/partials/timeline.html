@@ -1,0 +1,34 @@
+{% macro timeline(status = 1) %}
+<div class="bio-timeline">
+    <div class="bio-timeline-times">
+        <div class="bio-time{% if status >= 1 %} bio-time-selected {% endif %}">
+            <a href="./bio.html">
+                <div class="bio-time-number">1</div>
+            </a>
+            <div class="bio-time-label">Bio</div>
+        </div>
+        <div class="bio-time {% if status >= 2 %} bio-time-selected {% endif %}">
+            <a href="./real.html">
+                <div class="bio-time-number">2</div>
+            </a>
+            <div class="bio-time-label">Real stuff</div>
+        </div>
+        <div class="bio-time {% if status >= 3 %} bio-time-selected {% endif %}
+        ">
+            <a href="./memories.html">
+                <div class="bio-time-number">3</div>
+            </a>
+            <div class="bio-time-label">Memories</div>
+        </div>
+
+        {% set level = (status - 1) * 50 %}
+
+        <div class="timeline-line" style="background: linear-gradient(
+            to right, 
+            #c25fcc 0%, 
+            #835388 {{ level }}%, 
+            #eee {{ level }}%
+        );"></div>
+    </div>
+</div>
+{% endmacro %}

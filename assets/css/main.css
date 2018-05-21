@@ -240,9 +240,11 @@ div.bang-text-main {
     }
 }
 
-nav.nav {
+nav.nav, nav.navbar {
     box-shadow: 0 3px 10px #f1f1f1;
-    padding: 15px 40px;
+    padding: 15px 25px;
+    background-color: #fff;
+    border: 0;
 }
 
 nav div.nav-profile div {
@@ -257,9 +259,59 @@ nav div.nav-sign-out a {
     color: #888;
 }
 
-nav div.nav-profile div.nav-profile-name {
+nav div.nav-profile div.nav-profile-name, nav.navbar .navbar-brand {
+    font-size: 14px;
     color: #835388;
+    height: 35px;
+    padding: 7.5px 15px;
     font-weight: bold;
+    margin-right: 30px;
+}
+
+.nav>li>a {
+    padding-top: 7.5px;
+    padding-bottom: 7.5px;
+}
+
+.nav>li>a.preview {
+    color: #fff;
+    background-color: #835388;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 4px;
+}
+
+.nav>li>a.preview:focus, .nav>li>a.preview:hover {
+    color: #fff;
+    background-color: #835388;
+}
+
+.navbar-default .navbar-toggle {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    height: 35px;
+}
+
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+    background-color: transparent;
+}
+
+.navbar-default .navbar-collapse {
+    margin-top: 20px;
+}
+
+.navbar-toggle .icon-bar {
+    width: 30px;
+    height: 1px;
+}
+
+.navbar-toggle .icon-bar+.icon-bar {
+    margin-top: 6px;
+}
+    
+.navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover {
+    color: #835388;
 }
 
 nav div.nav-profile div.nav-profile-preview {
