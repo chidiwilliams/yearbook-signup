@@ -297,10 +297,6 @@ nav div.nav-profile div.nav-profile-name, nav.navbar .navbar-brand {
     background-color: transparent;
 }
 
-.navbar-default .navbar-collapse {
-    margin-top: 20px;
-}
-
 .navbar-toggle .icon-bar {
     width: 30px;
     height: 1px;
